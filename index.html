@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Odin-signUpForm</title>
+  </head>
+  <body class="body">
+    <div class="sidebar">
+      <span class="banner">
+        <img src="./images/odin-lined.png" alt="image of odin" />
+        <h1 class="title">ODIN</h1>
+      </span>
+      <p class="caption">
+        Photo by<a href="https://unsplash.com/@haliewestphoto"> Halie West </a>
+        on<a href="https://unsplash.com/photos/25xggax4bSA"> Unsplash </a>
+      </p>
+    </div>
+    <div class="container">
+      <div class="container-callToAction">
+        <p class="callToAction">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </p>
+        <p class="callToAction">You <em>know</em> you want to.</p>
+      </div>
+      <form
+        action="#"
+        method="post"
+        class="form"
+        aria-label="sign up form"
+        class="container-form"
+      >
+        <p class="required">
+          Required fields are followed by
+          <abbr
+            title="
+          defining required"
+            ><strong>*</strong></abbr
+          >
+        </p>
+        <div class="container-inputs">
+          <div class="container-input">
+            <label for="firstName" class="label firstName"
+              >FIRST NAME
+              <abbr title="This field is mandatory" aria-label="required">
+                <strong>*</strong>
+              </abbr>
+            </label>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              class="firstName"
+              maxlength="31"
+              minlength="2"
+              placeholder="Enter first name"
+            />
+          </div>
+          <div class="container-input">
+            <label for="lastName" class="label lastName"
+              >LAST NAME
+              <abbr title="This field is mandatory" aria-label="required">
+                <strong>*</strong>
+              </abbr>
+            </label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              class="lastName"
+              maxlength="31"
+              minlength="2"
+              placeholder="Enter last name"
+            />
+          </div>
+          <div class="container-input">
+            <label for="email" class="label email"
+              >EMAIL
+              <abbr title="This field is mandatory" aria-label="required"
+                ><strong>*</strong>
+              </abbr>
+            </label>
+            <input type="email" name="email" id="email" class="email" />
+          </div>
+          <div class="container-input">
+            <label for="phoneNumber" class="label phoneNumber"
+              >PHONE NUMBER
+              <abbr title="This field is mandatory" aria-label="required"
+                ><strong>*</strong>
+              </abbr>
+            </label>
+            <input
+              type="tel"
+              name="phoneNumber"
+              id="phoneNumber"
+              class="phoneNumber"
+              placeholder="Enter phone number"
+              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+              multiple
+            />
+          </div>
+          <div class="container-input">
+            <label for="password" class="label password"
+              >PASSWORD
+              <abbr title="This field is mandatory" aria-label="required"
+                ><strong>*</strong>
+              </abbr>
+            </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="password error"
+              placeholder="Enter password"
+              minlength="8"
+              pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+            />
+          </div>
+          <div class="container-input">
+            <label for="password" class="label password"
+              >CONFIRM PASSWORD
+              <abbr title="This field is mandatory" aria-label="required">
+                <strong>*</strong>
+              </abbr>
+            </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="password error"
+              minlength="8"
+              placeholder="Confirm password"
+              pattern="'(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="container-createAccount">
+        <button type="button" class="bttn">Create Account</button>
+        <p class="logInInfo">
+          Already have an account? <a href="#" class="logIn">Log in</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
