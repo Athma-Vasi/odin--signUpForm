@@ -23,6 +23,10 @@ html {
   --clr-base-bkgd: hsl(95, 23.6%, 98%);
   --clr-base-bkgd-light: hsl(95, 14.6%, 99%);
 }
+@font-face {
+  font-family: Norse-Bold;
+  src: url(./fonts/Norse-Bold.otf);
+}
 .body {
   font-size: 1.6rem;
   margin: 9% 0px;
@@ -55,6 +59,7 @@ img {
 }
 .title {
   color: var(--clr-base-bkgd);
+  font-family: Norse-Bold;
 }
 .caption {
   margin-top: 40rem;
